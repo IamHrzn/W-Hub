@@ -1277,13 +1277,13 @@ function Library.Load(LibConfig)
 
                     return Colorpicker
                 end,
-                AddParagraph = function(ParagraphConfig)
-                    ParagraphConfig = ParagraphConfig or {}
-                    ParagraphConfig.Name = ParagraphConfig.Name or "Paragraph"
-                    ParagraphConfig.Description = ParagraphConfig.Description or "Description"
-                    local Paragraph = {}
+               AddParagraph = function(PoragrophConfig)
+                    PoragrophConfig = PoragrophConfig or {}
+                    PoragrophConfig.Name = PoragrophConfig.Name or "Paragroph"
+                    PoragrophConfig.Description = PoragrophConfig.Description or "Description"
+                    local Poragroph = {}
 
-                    local ParagraphFrame = Create("Frame", {
+                    local ParagrophFrame = Create("Frame", {
                         BackgroundColor3 = Color3.fromRGB(28, 28, 28),
                         Size = UDim2.new(1, 0, 0, 32),
                         Parent = SectionContainer,
@@ -1302,7 +1302,7 @@ function Library.Load(LibConfig)
                         })
                     })
                     local Title = Create("TextLabel", {
-                        Parent = ParagraphFrame,
+                        Parent = ParagrophFrame,
                         BackgroundTransparency = 1,
                         Position = UDim2.new(0, 10, 0, 0),
                         Size = UDim2.new(1, -10, 1, 0),
@@ -1310,10 +1310,10 @@ function Library.Load(LibConfig)
                         TextColor3 = Color3.fromRGB(255, 255, 255),
                         TextSize = 16,
                         TextXAlignment = Enum.TextXAlignment.Left,
-                        Text = ParagraphConfig.Name
+                        Text = PoragrophConfig.Name
                     })
                     local Description = Create("TextLabel", {
-                        Parent = ParagraphFrame,
+                        Parent = ParagrophFrame,
                         BackgroundTransparency = 1,
                         Position = UDim2.new(0, 10, 0, 0),
                         Size = UDim2.new(1, -10, 1, 0),
@@ -1321,21 +1321,21 @@ function Library.Load(LibConfig)
                         TextColor3 = Color3.new(0.827451, 0.827451, 0.827451),
                         TextSize = 13,
                         TextXAlignment = Enum.TextXAlignment.Left,
-                        Text = ParagraphConfig.Description,
+                        Text = PoragrophConfig.Description,
                         AutomaticSize = Enum.AutomaticSize.Y,
                         TextWrapped = true,
                         RichText = true
                     })
 
-                    function Paragraph:Set(NewSettings)
-                        NewSettings.Name = NewSettings.Name or ParagraphConfig.Name
-                        NewSettings.Description = NewSettings.Description or ParagraphConfig.Description
+                    function Poragroph:Set(NewSettings)
+                        NewSettings.Name = NewSettings.Name or PoragrophConfig.Name
+                        NewSettings.Description = NewSettings.Description or PoragrophConfig.Description
 
                         Title.Text = NewSettings.Name
                         Description.Text = NewSettings.Description
                     end
 
-                    return Paragraph
+                    return Poragroph
                 end,
                 AddTextbox = function(TextboxConfig)
                     TextboxConfig = TextboxConfig or {}
