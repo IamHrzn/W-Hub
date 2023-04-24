@@ -1295,10 +1295,10 @@ function Library.Load(LibConfig)
                         Create("UIListLayout", {SortOrder = Enum.SortOrder.LayoutOrder})
                     }, {
                         Create("UIPadding", {
-                            PaddingBottom = UDim.new(0, 5),
+                            PaddingBottom = UDim.new(0, 0),
                             PaddingLeft = UDim.new(0, 10),
                             PaddingRight = UDim.new(0, 10),
-                            PaddingTop = UDim.new(0, 5)
+                            PaddingTop = UDim.new(0, 0)
                         })
                     })
                     local Title = Create("TextLabel", {
