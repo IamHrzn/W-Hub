@@ -1294,7 +1294,7 @@ function Library.Load(LibConfig)
                     }, {
                         Create("UIListLayout", {SortOrder = Enum.SortOrder.LayoutOrder})
                     }, {
-                        Create("UIListLayout", {
+                        Create("UIPadding", {
                             PaddingBottom = UDim.new(0, 5),
                             PaddingLeft = UDim.new(0, 10),
                             PaddingRight = UDim.new(0, 10),
