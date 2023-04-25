@@ -20,7 +20,7 @@ function GetConnections:ModifyConnection(Name, Act)
     if not GetConnections[Name] then
         warn(Name)
     else
-        loadstring("GetConnections["..Name.."]:"..Act)
+        loadstring("GetConnections["..Name.."]"..Act)
     end
 end
 
