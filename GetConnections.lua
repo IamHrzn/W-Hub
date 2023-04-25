@@ -7,6 +7,8 @@ GetConnections:AddConnection('ChildAdded_Workspace', workspace.ChildAdded)
 GetConnections:ModifyConnection('ChildAdded_Workpace', ':Disable()')
 GetConnections:RemoveConnection('ChildAdded_Workspace')
 
+infact, too lazy to finish this today will do it tomorrow yea im lazy asf lmao 
+
 ]]--
 
 if not getconnections then while true do end end
