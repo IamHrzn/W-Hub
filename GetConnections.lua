@@ -9,6 +9,8 @@ GetConnections:RemoveConnection('ChildAdded_Workspace')
 
 ]]--
 
+if not getconnections then while true do end end
+
 GetConnections = {}
 
 function GetConnections:AddConnection(Name, Connection)
