@@ -1,3 +1,14 @@
+
+--[[
+
+Example:
+
+GetConnections:AddConnection('ChildAdded_Workspace', workspace.ChildAdded)
+GetConnections:ModifyConnection('ChildAdded_Workpace', ':Disable()')
+GetConnections:RemoveConnection('ChildAdded_Workspace')
+
+]]--
+
 GetConnections = {}
 
 function GetConnections:AddConnection(Name, Connection)
