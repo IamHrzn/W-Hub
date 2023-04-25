@@ -1,4 +1,8 @@
-  local Main = Library.Load({
+--[[
+  Stand-alone, this will not work for anybody. #1 UI is not loaded, and you do not have the custom ESP library that W hub uses.
+]]  
+
+local Main = Library.Load({
         Title = ("Universal")
     })
     local Tabs = {
